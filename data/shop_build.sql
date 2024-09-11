@@ -20,7 +20,6 @@ create table customer (
 
 create table purchase (
 	id int not null primary key,
-	total_price int not null, 
 	customer_id int not null, 
 	foreign key(customer_id) references customer(id)
 );
